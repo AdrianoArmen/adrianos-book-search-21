@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import { Form, Button, Alert } from "react-bootstrap";
 
-import { loginUser } from "../utils/API";
 import Auth from "../utils/auth";
 import { useMutation } from "@apollo/client";
 import { LOGIN_USER } from "../utils/mutations";
@@ -35,7 +34,7 @@ const LoginForm = () => {
         variables: { ...userFormData },
       });
 
-      Auth.login(data.addUser.token);
+      Auth.login(data.login.token);
     } catch (err) {
       console.error(err);
       setShowAlert(true);
@@ -91,7 +90,7 @@ const LoginForm = () => {
         <Button
           disabled={!(userFormData.email && userFormData.password)}
           type="submit"
-          variant="success"
+          variant="warning"
         >
           Submit
         </Button>
