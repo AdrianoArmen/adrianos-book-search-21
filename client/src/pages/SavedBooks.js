@@ -22,6 +22,7 @@ const SavedBooks = () => {
   const [deleteBook, { error }] = useMutation(DELETE_BOOK);
 
   const userData = data?.me || [];
+  const userDataLength = Object.keys(userData).length;
 
   // create function that accepts the book's mongo _id value as param and deletes the book from the database
   const handleDeleteBook = async (bookId) => {
@@ -36,9 +37,6 @@ const SavedBooks = () => {
         variables: { bookId },
       });
 
-      const updatedUser = await response.json();
-      setUserData(updatedUser);
-      // upon success, remove book's id from localStorage
       deleteBookId(bookId);
     } catch (err) {
       console.error(err);
@@ -46,7 +44,7 @@ const SavedBooks = () => {
   };
 
   // if data isn't here yet, say so
-  if (!userDataLength) {
+  if (!loading) {
     return <h2>LOADING...</h2>;
   }
 
