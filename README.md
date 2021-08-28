@@ -1,8 +1,20 @@
 # adrianos-book-search-21
+![GitHub license](https://img.shields.io/badge/license-MIT-green.svg)
+
+Homework 21 - MERN Book Search Engine
+
+## GitHub Repository 🚀
+
+- [GitHub Repo Link](https://github.com/AdrianoArmen/adrianos-book-search-21)
+
+## App Deployment on Heroku 📦
+
+- [App Deploy Link](https://still-crag-44399.herokuapp.com/)
+
+## Project Description 📋
+This MERN stack application was designed to showcase my overall knowledge of React development and Heroku deployment using  [MongoDB Atlas](https://www.mongodb.com/es/cloud/atlas/register) to host our Mongoose database. It has a Sign Up / Login interface that will allow and authenticate users giving the option to store a book selection on the database. The main function of the app is to display a book-themed search engine and results for the logged-in users.
 
 
-link
-https://frozen-ridge-36187.herokuapp.com/ 
 
 ---
 
