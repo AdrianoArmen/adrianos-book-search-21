@@ -47,7 +47,7 @@ const SearchBooks = () => {
       const response = await searchGoogleBooks(searchInput);
 
       if (!response.ok) {
-        throw new Error("something went wrong!");
+        throw new Error("something went wrong❗");
       }
 
       const { items } = await response.json();
@@ -86,7 +86,7 @@ const SearchBooks = () => {
         },
       });
       if (!data.ok) {
-        throw new Error("something went wrong!");
+        throw new Error("something went wrong❗");
       }
 
       // if book successfully saves to user's account, save book id to state
@@ -155,8 +155,8 @@ const SearchBooks = () => {
                       {savedBookIds?.some(
                         (savedBookId) => savedBookId === book.bookId
                       )
-                        ? "This book has already been saved!"
-                        : "Save this Book!"}
+                        ? "This book has already been saved❗"
+                        : "Save this Book❗"}
                     </Button>
                   )}
                 </Card.Body>
