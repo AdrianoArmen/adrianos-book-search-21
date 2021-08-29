@@ -14,6 +14,12 @@ Homework 21 - MERN Book Search Engine
 ## Project Description 📋
 This MERN stack application was designed to showcase my overall knowledge of React development and [Heroku](https://dashboard.heroku.com/apps) deployment using  [MongoDB Atlas](https://www.mongodb.com/es/cloud/atlas/register) to host our [Mongoose](https://mongoosejs.com/). It uses [GraphQL](https://graphql.org/graphql-js/) for API handling. It has a Sign Up / Login interface that will allow and authenticate users giving the option to store a book selection on the database. The main function of the app is to display a book-themed search engine and results for the logged-in users.
 
+## Run App Locally 💬
+
+```md
+npm run start
+```
+
 
 
 ## Mockup 🔧
