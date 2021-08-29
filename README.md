@@ -24,7 +24,7 @@ This MERN stack application was designed to showcase my overall knowledge of Rea
 
 - The following animation demonstrates the actual application functionality and style:
 
-![Basic navigation of the budget tracker showing some adding and substraction of funds](./Assets/appfunctionality.gif)
+![Basic functionality of dark themed book search engine looking for some books](./Assets/appfunctionality.gif)
 
 ## Technologies used 🛠️
 - [MongoDB](https://www.mongodb.com/es/cloud/atlas) - global cloud database service
